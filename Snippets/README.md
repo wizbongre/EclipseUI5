@@ -1,0 +1,3 @@
+To use these snippets, open your Eclipse and find the Snippets view (if you can't see it, go to menu path Window->Show View->Other and search for Snippets or find it under the General tab.)  Once opened, right click anywhere in the Snippets view and choose Customise...
+
+From here, you should have an Import option - use this and navigate to the snippets.xml file you should have downloaded locally.
