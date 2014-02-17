@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<snippets>
+    <category filters="*" id="category_1392648202962" initial_state="2" label="wizbongre/EclipseUI5/" largeicon="" smallicon="">
+        <description><![CDATA[UI5 (SAPUI5 & OpenUI5) Templates for Eclipse - provided at https://github.com/wizbongre/EclipseUI5]]></description>
+        <item category="category_1392648202962" class="" editorclass="" id="item_1392646744142" label="Basic UI5 Desktop index.html" largeicon="" smallicon="" snippetProvider="org.eclipse.wst.common.snippets.ui.TextSnippetProvider">
+            <description><![CDATA[A standard UI5 index.html file, with placeholders for sap-ui-core.js, libs & theme; plus basic linking to other standard files such as css, .js, etc.  Can be used as a quickstart for a new UI5 desktop* project.
+
+
+
+* For a mobile project, use either the UI5 mobile specific snippet or change the sap-ui-libs used.]]></description>
+            <content><![CDATA[<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<script src="${sap-ui-core}" id="sap-ui-bootstrap"
+	data-sap-ui-libs="${sap-ui-libs}"
+	data-sap-ui-theme="${sap-ui-theme}">
+</script>
+
+<!-- Custom Styles -->
+<link rel="stylesheet" type="text/css" href="${Custom CSS}" />
+
+<!-- Custom Util JavaScript -->
+<script type="text/javascript" src="${Custom Util JS}"></script>
+
+<!-- all App JavaScript Code starts in ${Application JS}, no Code in HTML -->
+<script type="text/javascript" src="${Application JS}"></script>
+
+<title>${Window Title}</title>
+</head>
+
+<body class="sapUiBody" id="${Content ID}">
+</body>
+</html>]]></content>
+            <variable default="resources/sap-ui-core.js" id="name_1" name="sap-ui-core">
+                <description><![CDATA[Source for standard UI5 core libraries]]></description>
+            </variable>
+            <variable default="sap.ui.commons" id="name_2" name="sap-ui-libs">
+                <description><![CDATA[Starting libraries for the application]]></description>
+            </variable>
+            <variable default="sap_goldreflection" id="name_3" name="sap-ui-theme">
+                <description><![CDATA[Application theme to be used]]></description>
+            </variable>
+            <variable default="css/style.css" id="name_4" name="Custom CSS">
+                <description><![CDATA[Link to custom stylesheet]]></description>
+            </variable>
+            <variable default="js/Util.js" id="name_5" name="Custom Util JS">
+                <description><![CDATA[Link to custom util JS file]]></description>
+            </variable>
+            <variable default="js/application.js" id="name_6" name="Application JS">
+                <description><![CDATA[Link to main application.js file]]></description>
+            </variable>
+            <variable default="UI5 Desktop App" id="name_7" name="Window Title">
+                <description><![CDATA[<title>Content]]></description>
+            </variable>
+            <variable default="content" id="name_8" name="Content ID">
+                <description><![CDATA[ID of the main content placeholder]]></description>
+            </variable>
+        </item>
+        <item category="category_1392648202962" class="" editorclass="" id="category_13926482029621392648309542" label="Basic UI5 Mobile index.html" largeicon="" smallicon="" snippetProvider="org.eclipse.wst.common.snippets.ui.TextSnippetProvider">
+            <description><![CDATA[A standard UI5 index.html file, with placeholders for sap-ui-core.js, libs & theme; plus basic linking to other standard files such as css, .js, etc.  Can be used as a quickstart for a new UI5 mobile* project.
+
+
+
+* For a desktop project, use either the UI5 desktop specific snippet or change the sap-ui-libs used.]]></description>
+            <content><![CDATA[<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<script src="${sap-ui-core}" id="sap-ui-bootstrap"
+	data-sap-ui-libs="${sap-ui-libs}"
+	data-sap-ui-theme="${sap-ui-theme}"
+	data-sap-ui-xx-bindingSyntax="complex">
+</script>
+
+<!-- Custom Styles -->
+<link rel="stylesheet" type="text/css" href="${Custom CSS}" />
+
+<!-- Custom Util JavaScript -->
+<script type="text/javascript" src="${Custom Util JS}"></script>
+
+<!-- all App JavaScript Code starts in ${Application JS}, no Code in HTML -->
+<script type="text/javascript" src="${Application JS}"></script>
+
+<title>${Window Title}</title>
+</head>
+
+<body class="sapUiBody" id="${Content ID}">
+</body>
+</html>]]></content>
+            <variable default="https://openui5.netweaver.ondemand.com/resources/sap-ui-core.js" id="name_1" name="sap-ui-core">
+                <description><![CDATA[Source for standard UI5 core libraries]]></description>
+            </variable>
+            <variable default="sap.m" id="name_2" name="sap-ui-libs">
+                <description><![CDATA[Starting libraries for the application]]></description>
+            </variable>
+            <variable default="sap_bluecrystal" id="name_3" name="sap-ui-theme">
+                <description><![CDATA[Application theme to be used]]></description>
+            </variable>
+            <variable default="css/style.css" id="name_4" name="Custom CSS">
+                <description><![CDATA[Link to custom stylesheet]]></description>
+            </variable>
+            <variable default="js/Util.js" id="name_5" name="Custom Util JS">
+                <description><![CDATA[Link to custom util JS file]]></description>
+            </variable>
+            <variable default="js/application.js" id="name_6" name="Application JS">
+                <description><![CDATA[Link to main application.js file]]></description>
+            </variable>
+            <variable default="UI5 Mobile App" id="name_7" name="Window Title">
+                <description><![CDATA[<title>Content]]></description>
+            </variable>
+            <variable default="content" id="name_8" name="Content ID">
+                <description><![CDATA[ID of the main content placeholder]]></description>
+            </variable>
+        </item>
+    </category>
+</snippets>
